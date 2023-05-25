@@ -1,8 +1,7 @@
-import string
-text="Hey! What's up bro?,jibii"
-text=text.replace('!',' ')
-text=text.replace('?',' ')
-text=text.replace(',','')
-test_text=text.translate(str.maketrans('','',string.punctuation))
-text=test_text.split()
-print(text)
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+car=Car()
+my_car = car("Toyota", "Prius")
+print(my_car.make)
